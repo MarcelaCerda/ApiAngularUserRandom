@@ -1,0 +1,13 @@
+
+<h2>Ficha Personal</h2>
+<img style="width: 100px; border-radius: 50%;"  src="{{foto}}" alt="foto">
+<h3>Nombre: {{nombre}}</h3>
+<h3>Apellido: {{apellido}}</h3>
+<h3>Hijos</h3>
+<ul>
+   <li *ngFor="let hijo of hijos">
+        <p>Nombre: {{hijo.nombre}}</p>
+        <p>Fecha de Nacimiento: {{hijo.fechaNacimiento}}</p>
+        <p>Estudios: {{hijo.estudios}} </p>
+    </li> 
+</ul>   
